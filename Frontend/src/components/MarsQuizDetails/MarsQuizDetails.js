@@ -1,0 +1,44 @@
+import React from 'react';
+import { Link, useLoaderData } from 'react-router-dom';
+import MarsQuizDetailsQuestions from '../MarsQuizDetailsQuestions/MarsQuizDetailsQuestions';
+import './MarsQuizDetails.css';
+
+
+const MarsQuizzesDetails = () => {
+
+    const quiz = useLoaderData();
+    const questions = quiz.questions;
+
+
+
+    return (
+        <div>
+            <div className='w-full'>
+                <div className='max-w-[1240px] mx-auto px-2'>
+                    <div className='flex flex-row justify-between p-5'>
+                        <Link to='/mars_quizzes'>
+                            <img className='translate-x-5' src="/arrow_left.svg" alt="" />
+                        </Link>
+                        <h1 className='m-5 text-3xl'>Quiz on {quiz.name}</h1>
+                        <Link to='/'>
+                            <h3 className='text-[#E5DBCC] text-xl font-light -translate-x-12'>Mars Marvel</h3>
+                        </Link>
+                    </div>
+                    <img src="/divider.svg" className='opacity-50 translate-x-10 pb-8' alt="" />
+
+
+                    {
+                        questions.map(questionName => <MarsQuizDetailsQuestions
+                            key={questionName.id}
+                            questionName={questionName}
+                        ></MarsQuizDetailsQuestions>)
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    );
+};
+
+export default MarsQuizzesDetails;

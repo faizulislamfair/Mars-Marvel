@@ -1,0 +1,16 @@
+.error {
+    margin: 100px;
+    padding: 100px;
+    background-image: linear-gradient(115deg, #D35400 3.28%, #2980B9 100%, rgba(41, 128, 185, 0.00) 96.99%);
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #95A0A7;
+    border-radius: 15px;
+}
+
+.error-name {
+    color: #ffffff;
+}
