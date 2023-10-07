@@ -19,6 +19,7 @@ A dynamic web application, epitomizes the impact of open science by democratizin
 
 
 <br>
+<br>
 <h2>DETAILED PROJECT DESCRIPTION</h2>
 
 <h2>What is Mars Marvel?</h2>
