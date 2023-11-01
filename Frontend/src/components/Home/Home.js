@@ -10,7 +10,7 @@ const Home = () => {
         <div className='w-full bg-[#000] h-auto feature-body'>
             <div className='max-w-[1280px] mx-auto px-2'>
 
-                <div className='py-12 text-4xl text-[#E5DBCC]'>
+                <div className='xs:text-3xl py-12 md:text-4xl text-[#E5DBCC]'>
                     Mars Marvel
                 </div>
 

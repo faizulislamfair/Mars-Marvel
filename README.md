@@ -254,7 +254,7 @@ The vision of Mars Marvel is to revolutionize the future of NASA and the people 
 <br>
 
 <h2>HACKATHON JOURNEY</h2>
-Right now, as we speak, the NASA Space Apps Challenge 2023 is in full swing, and the excitement is palpable. Our dedicated team is at the heart of this dynamic and unfolding adventure. This hackathon journey is a testament to our collective human ingenuity, collaboration, and insatiable curiosity for exploring the cosmos. Like many others from around the world, our team is actively engaged in brainstorming, coding, designing, and innovating. It's a bustling virtual space where your brilliant minds are tackling challenges that extend from Earth to the far reaches of our solar system.
+With the NASA Space Apps Challenge 2023 now concluded, the excitement that permeated the event is still vivid in our minds. We are proud to have been a part of this incredible experience and to have contributed to the global effort to explore the mysteries of space. As the hackathon came to a close, we reflected on the remarkable progress made and the innovative solutions created. Like many others from around the world, our team was actively engaged in brainstorming, coding, designing, and innovating during the hackathon. It was a bustling virtual space where brilliant minds tackled challenges that extended from Earth to the far reaches of our solar system. The connections forged with fellow space enthusiasts from across the globe will continue to inspire future collaborations. Although the hackathon has ended, the spirit of exploration and the drive to push the boundaries of our understanding of the universe will persist, ensuring that our cosmic journey remains an enduring endeavor.
 
 <br>
 

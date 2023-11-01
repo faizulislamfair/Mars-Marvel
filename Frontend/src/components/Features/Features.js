@@ -38,14 +38,14 @@ const Features = () => {
     return (
         <div className='w-full text-[#E5DBCC]'>
 
-            <div className='max-w-[1280px] mx-auto px-2'>
+            <div className='max-w-[1280px] mx-auto md:px-2'>
 
-                <div className='grid grid-cols-2 gap-10'>
+                <div className='grid sm:grid-cols-12 md:grid-cols-2 xs:gap-5 md:gap-10'>
 
-                    <div className='container'>
+                    <div className='container xs:ml-8 md:ml-0'>
 
                         <Link to='/real_time_weather'>
-                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 px-16 pt-2 text-left feature_body bg-[#0E0E0E]'>
+                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 xs:pl-5 xs:pr-15 md:px-16 pt-2 text-left feature_body bg-[#0E0E0E]'>
                                 {/* <p>{currentDate.toLocaleString()}</p> */}
                                 <div className='flex flex-col p-3'>
                                     <p className='text-sm'>September 23, 2023</p>
@@ -54,9 +54,9 @@ const Features = () => {
                                     </h3>
                                 </div>
 
-                                <div className='flex flex-row justify-between p-4'>
+                                <div className='xs:hidden md:flex flex-row justify-between p-4'>
                                     <div className='flex flex-row'>
-                                        <img className='-translate-x-3' src="./sun.svg" alt="" />
+                                        <img className='-translate-x-3 xs:hidden md:block' src="./sun.svg" alt="" />
                                         <div className='flex flex-col'>
                                             <div> High: 24°F</div>
                                             <div> Low: -139.8°F</div>
@@ -64,7 +64,7 @@ const Features = () => {
                                     </div>
                                     <img src="./Line_1.svg" alt="" />
                                     <div className='flex flex-row'>
-                                        <img src="./wind.svg" alt="" />
+                                        <img src="./wind.svg" className='xs:hidden md:block' alt="" />
                                         <div className='flex flex-row p-3'>
                                             <div>8&nbsp;&nbsp;</div>
                                             <div>m/s</div>
@@ -72,7 +72,7 @@ const Features = () => {
                                     </div>
                                     <img src="./Line_1.svg" alt="" />
                                     <div className='flex flex-row'>
-                                        <img src="./import.svg" alt="" />
+                                        <img src="./import.svg" className='xs:hidden md:block' alt="" />
                                         <div className='flex flex-row p-3'>
                                             <div>1023&nbsp;&nbsp;</div>
                                             <div>hPa</div>
@@ -81,37 +81,39 @@ const Features = () => {
                                 </div>
 
 
-                                <div className='flex flex-row justify-around'>
-                                    <img className='-translate-x-6' src="./arrow-left.svg" alt="" />
+                                <div className='xs:block'>
+                                    <div className='flex flex-row justify-around'>
+                                        <img className='xs:-translate-x-6' src="./arrow-left.svg" alt="" />
 
-                                    <div className='flex flex-row text-center text-sm p-2 rounded'>
-                                        <div style={tabInlineStyles} className='flex flex-col rounded -translate-x-4 p-1'>
-                                            <div>Sol 680</div>
-                                            <div>October 24</div>
-                                            <img className='py-2 opacity-70' src="./rectangle_11.svg" alt="" />
-                                            <div>High: 240 °F</div>
-                                            <div>Low: -139.80 °F</div>
+                                        <div className='flex flex-row text-center text-sm p-2 rounded'>
+                                            <div style={tabInlineStyles} className='flex flex-col rounded xs:-translate-x-7 md:-translate-x-4 p-1'>
+                                                <div>Sol 680</div>
+                                                <div>October 24</div>
+                                                <img className='py-2 opacity-70' src="./rectangle_11.svg" alt="" />
+                                                <div>High: 240 °F</div>
+                                                <div>Low: -139.80 °F</div>
+                                            </div>
+
+                                            <div style={centerTabInlineStyles} className='flex flex-col p-1'>
+                                                <div>Sol 680</div>
+                                                <div>October 24</div>
+                                                <img className='py-2 opacity-70' src="./rectangle_11.svg" alt="" />
+                                                <div>High: 240 °F</div>
+                                                <div>Low: -139.80 °F</div>
+                                            </div>
+
+
+                                            <div style={tabInlineStyles} className='flex flex-col translate-x-4 p-1'>
+                                                <div>Sol 680</div>
+                                                <div>October 24</div>
+                                                <img className='py-2 opacity-70' src="./rectangle_11.svg" alt="" />
+                                                <div>High: 240 °F</div>
+                                                <div>Low: -139.80 °F</div>
+                                            </div>
                                         </div>
 
-                                        <div style={centerTabInlineStyles} className='flex flex-col p-1'>
-                                            <div>Sol 680</div>
-                                            <div>October 24</div>
-                                            <img className='py-2 opacity-70' src="./rectangle_11.svg" alt="" />
-                                            <div>High: 240 °F</div>
-                                            <div>Low: -139.80 °F</div>
-                                        </div>
-
-
-                                        <div style={tabInlineStyles} className='flex flex-col translate-x-4 p-1'>
-                                            <div>Sol 680</div>
-                                            <div>October 24</div>
-                                            <img className='py-2 opacity-70' src="./rectangle_11.svg" alt="" />
-                                            <div>High: 240 °F</div>
-                                            <div>Low: -139.80 °F</div>
-                                        </div>
+                                        <img className='xs:translate-x-2 md:translate-x-6' src="./arrow-right.svg" alt="" />
                                     </div>
-
-                                    <img className='translate-x-6' src="./arrow-right.svg" alt="" />
                                 </div>
 
                             </div>
@@ -120,7 +122,7 @@ const Features = () => {
 
                         <Link to='/research_on_mars'>
 
-                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 px-16 p-5 text-left bg-[#0E0E0E]'>
+                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 xs:pl-5 xs:pr-15 md:px-16 py-5 text-left bg-[#0E0E0E]'>
                                 <h3 className='text-xl font-normal'>Research /&nbsp;Paper/&nbsp;Magazine on Mars</h3>
                                 <p className='text-base font-normal font-family: Montserrat;
 mt-2'>Numerous research papers and documents explore Mars, focusing on its geology, climate, and the search for signs of life. These materials draw from data gathered by missions like NASA's Curiosity rover, offer valuable insights into the Red Planet and promote study</p>
@@ -132,7 +134,7 @@ mt-2'>Numerous research papers and documents explore Mars, focusing on its geolo
 
                         <Link to='/mars_trek_wmts'>
 
-                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 px-16 p-5 text-left bg-[#0E0E0E]'>
+                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 xs:pl-5 xs:pr-15 md:px-16 py-5 text-left bg-[#0E0E0E]'>
                                 <h3 className='text-xl font-normal'>Mars Trek Web Map Tile Service</h3>
                                 <p className='text-base font-normal font-family: Montserrat;
 mt-2'>Mars Trek's Web Map Tile Service (WMTS) offers users access to NASA's Mars data and imagery, enabling the integration of Martian maps and information into custom applications and projects for in-depth exploration of the Red Planet.</p>
@@ -149,11 +151,11 @@ mt-2'>Mars Trek's Web Map Tile Service (WMTS) offers users access to NASA's Mars
                     </div>
 
 
-                    <div className='container'>
+                    <div className='container xs:ml-8 md:ml-0'>
                         <Link to='/chat_voice_bot'>
 
                             <div className='container'>
-                                <div className='shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 px-16 py-5 pt-2 text-left bg-[#0E0E0E]'>
+                                <div className='shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 xs:pl-5 xs:pr-15 md:px-16 py-5 pt-2 text-left bg-[#0E0E0E]'>
                                     <h3 className='text-xl font-normal'>Chat & Voice Bot</h3>
                                     <p className='text-base font-normal font-family: Montserrat;
 mt-2'>It enables the chatbot to understand user queries and provide relevant responses based on predefined intents and machine learning-based training.</p>
@@ -166,7 +168,7 @@ mt-2'>It enables the chatbot to understand user queries and provide relevant res
 
                         <Link to='/rover_mission_images'>
 
-                            <div className='mt-12 mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 px-16 pt-2 text-left bg-[#0E0E0E]'>
+                            <div className='mt-12 mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 xs:pl-5 xs:pr-15 md:px-16 pt-2 text-left bg-[#0E0E0E]'>
                                 <h3 className='text-xl font-normal'>Rover Mission Images</h3>
                                 <p className='text-base font-normal font-family: Montserrat;
 mt-2'>Watch Breathtaking images from Mars Rovers</p>
@@ -195,7 +197,7 @@ mt-2'>Watch Breathtaking images from Mars Rovers</p>
 
                         <Link to='/mars_quizzes'>
 
-                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 px-16 p-5 text-left bg-[#0E0E0E]'>
+                            <div className='mb-14 shadow shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300 xs:pl-5 xs:pr-15 md:px-16 py-5 text-left bg-[#0E0E0E]'>
                                 <h3 className='text-xl font-normal'>Mars Quizzes</h3>
                                 <p className='text-base font-normal font-family: Montserrat;
 mt-2'>Exploring Mars: Quizzes for Young Space Enthusiasts, we've created an engaging and educational experience tailored specifically for students and young people. This collection of quizzes is designed to make learning about Mars a fun and interactive journey.</p>

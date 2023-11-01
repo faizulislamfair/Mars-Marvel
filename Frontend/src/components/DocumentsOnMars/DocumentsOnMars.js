@@ -30,20 +30,20 @@ const DocumentsOnMars = () => {
 
                     <div className='flex flex-row justify-between p-5 mb-5 translate-x-3'>
                         <Link to='/'>
-                            <img src="./arrow_left.svg" alt="" />
+                            <img src="./arrow_left.svg" className='xs:hidden md:block' alt="" />
                         </Link>
                         <h3 className='text-3xl text-center text-[#E5DBCC]'>Research /&nbsp;Paper/&nbsp;Magazine on Mars</h3>
                         <Link to='/'>
-                            <h3 className='text-[#E5DBCC] text-xl font-light -translate-x-12'>Mars Marvel</h3>
+                            <h3 className='xs:hidden md:block text-[#E5DBCC] text-xl font-light -translate-x-12'>Mars Marvel</h3>
                         </Link>
                     </div>
-                    <img src="./divider.svg" className='pb-3 opacity-50 translate-x-10' alt="" />
+                    <img src="./divider.svg" className='xs:hidden md:block pb-3 opacity-50 translate-x-10' alt="" />
 
                     <div className='container justify-items-center'>
-                        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-3 mt-5 text-[#E5DBCC] text-justify'>
+                        <div className='grid sm:grid-cols-12 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-3 mt-5 text-[#E5DBCC] text-justify'>
 
                             <Link to='/research_on_mars/research_paper'>
-                                <div className='rounded-xl hover:scale-105 ease-in duration-300'>
+                                <div className='xs:translate-x-8 md:translate-x-0 rounded-xl hover:scale-105 ease-in duration-300'>
                                     <div className='py-10'>
                                         <div className='rounded-xl overflow-hidden max-w-sm pb-3 bg-[#0E0E0E] shadow shadow-gray-700'>
                                             <img src='./research_paper.jpg' style={{ width: '500px', height: '220px' }} alt="" />
@@ -62,7 +62,7 @@ const DocumentsOnMars = () => {
                             </Link>
 
                             <Link to='/research_on_mars/promote_research'>
-                                <div className='rounded-xl hover:scale-105 ease-in duration-300'>
+                                <div className='xs:translate-x-8 md:translate-x-0 rounded-xl hover:scale-105 ease-in duration-300'>
                                     <div className='py-10'>
                                         <div className='rounded-xl overflow-hidden max-w-sm pb-3 bg-[#0E0E0E] shadow shadow-gray-700'>
                                             <img src='./promote_research.jpg' style={{ width: '500px', height: '220px' }} alt="" />
@@ -72,7 +72,7 @@ const DocumentsOnMars = () => {
                                                     Unlock the Secrets of Mars: Dive into the World of Martian Research! Join the scientific community in unraveling the mysteries of the Red Planet. Discover groundbreaking insights into Mars' geology, atmosphere, potential for human habitation, and the search for signs of past or present life.
                                                 </p>
                                             </div>
-                                            <button style={inlineStyles} className=' bg-[#ff585d] p-3 rounded-xl hover:scale-105 ease-in duration-300 ml-5'>
+                                            <button style={inlineStyles} className=' bg-[#ff585d] px-5 py-3 rounded-xl hover:scale-105 ease-in duration-300 ml-5'>
                                                 View
                                             </button>
                                         </div>
@@ -81,7 +81,7 @@ const DocumentsOnMars = () => {
                             </Link>
 
                             <Link to='/research_on_mars/science_magazine'>
-                                <div className='rounded-xl hover:scale-105 ease-in duration-300'>
+                                <div className='xs:translate-x-8 md:translate-x-0 rounded-xl hover:scale-105 ease-in duration-300'>
                                     <div className='py-10'>
                                         <div className='rounded-xl overflow-hidden shadow max-w-sm pb-3 bg-[#0E0E0E] shadow-gray-700'>
                                             <img src='./science_magazine.jpg' style={{ width: '500px', height: '220px' }} alt="" />
@@ -91,7 +91,7 @@ const DocumentsOnMars = () => {
                                                     Embark on a Martian Odyssey with Science Magazine! Dive into a treasure trove of peer-reviewed articles exploring Mars' geology, climate, astrobiology, and potential for human colonization. Stay at the forefront of Martian research and join the quest to understand this enigmatic planet.
                                                 </p>
                                             </div>
-                                            <button style={inlineStyles} className='bg-[#ff585d] p-3 rounded-xl hover:scale-105 ease-in duration-300 ml-5'>
+                                            <button style={inlineStyles} className='bg-[#ff585d] px-5 py-3 rounded-xl hover:scale-105 ease-in duration-300 ml-5'>
                                                 View
                                             </button>
                                         </div>

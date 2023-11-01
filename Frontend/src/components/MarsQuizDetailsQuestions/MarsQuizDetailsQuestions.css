@@ -38,3 +38,44 @@
     height: 70px;
     padding: 2px;
 }
+
+
+
+
+/* Mobile Devices */
+
+@media only screen and (min-width:320px) and (max-width: 350px) {
+    .shift {
+        transform: translateX(100px);
+    }
+}
+
+
+
+@media only screen and (min-width:350px) and (max-width: 400px) {
+    .shift {
+        transform: translateX(100px);
+    }
+}
+
+
+
+
+@media only screen and (min-width:400px) and (max-width: 688px) {
+    .shift {
+        transform: translateX(100px);
+    }
+}
+
+
+
+
+/* Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {}
+
+
+
+/* Desktop */
+
+@media only screen and (min-width:992px) and (max-width: 1400px) {}

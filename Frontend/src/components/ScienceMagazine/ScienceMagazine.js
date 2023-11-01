@@ -8,14 +8,14 @@ const ScienceMagazine = () => {
                 <div className='m-10'>
                     <div className='flex flex-row justify-between p-5 mb-2'>
                         <Link to='/research_on_mars'>
-                            <img className='translate-x-5' src="/arrow_left.svg" alt="" />
+                            <img className='xs:hidden md:block translate-x-5' src="/arrow_left.svg" alt="" />
                         </Link>
-                        <h3 className='text-3xl text-center text-[#E5DBCC] translate-x-10'>Science Magazine Issues</h3>
+                        <h3 className='text-3xl text-center text-[#E5DBCC] md:translate-x-10'>Science Magazine Issues</h3>
                         <Link to='/'>
-                            <h3 className='text-[#E5DBCC] text-xl font-light'>Mars Marvel</h3>
+                            <h3 className='xs:hidden md:block text-[#E5DBCC] text-xl font-light'>Mars Marvel</h3>
                         </Link>
                     </div>
-                    <img src="/divider.svg" className='opacity-50 translate-x-10' alt="" />
+                    <img src="/divider.svg" className='xs:hidden md:block opacity-50 translate-x-10' alt="" />
                     <p className='text-2xl pb-5 pt-10'>Magazine Credits: Mars Science Laboratory Science Team Papers
                     </p>
                     <div className='w-full'>

@@ -12,14 +12,14 @@ const PromoteResearch = () => {
                 <div className='m-10'>
                     <div className='flex flex-row justify-between p-5 mb-2'>
                         <Link to='/research_on_mars'>
-                            <img className='translate-x-5' src="/arrow_left.svg" alt="" />
+                            <img className='xs:hidden md:block translate-x-5' src="/arrow_left.svg" alt="" />
                         </Link>
-                        <h3 className='text-3xl text-center text-[#E5DBCC] translate-x-10'>Promote Research</h3>
+                        <h3 className='text-3xl text-center text-[#E5DBCC] md:translate-x-10'>Promote Research</h3>
                         <Link to='/'>
-                            <h3 className='text-[#E5DBCC] text-xl font-light'>Mars Marvel</h3>
+                            <h3 className='xs:hidden md:block text-[#E5DBCC] text-xl font-light'>Mars Marvel</h3>
                         </Link>
                     </div>
-                    <img src="/divider.svg" className='opacity-50 translate-x-10' alt="" /><br />
+                    <img src="/divider.svg" className='xs:hidden md:block opacity-50 translate-x-10' alt="" /><br />
 
                     <iframe src="https://mars.nasa.gov/gltf_embed/24881" width="100%" height="450px" frameborder="0" />
 

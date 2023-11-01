@@ -38,9 +38,11 @@ const MarsQuizDetailsQuestions = ({ questionName }) => {
     return (
         <div className='w-full'>
             <div className='max-w-[1240px] mx-auto px-2'>
-                <div className='container carded'>
+                <div className='container carded xs:ml-9'>
 
                     <div className='questionAndIcon text-center justify-center'>
+
+
                         <p className='text-center justify-center text-lg font-semibold'>Question {question}</p>
                         <FontAwesomeIcon onClick={() => answerDisplay(correctAnswer)} className='icon cursor-pointer' icon={faEye}></FontAwesomeIcon>
                     </div>

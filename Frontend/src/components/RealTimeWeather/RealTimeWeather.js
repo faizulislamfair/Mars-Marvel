@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import './RealTimeWeather.css';
+import './RealTimeWeather.css';
 
 const RealTimeWeather = () => {
 
@@ -66,15 +66,15 @@ const RealTimeWeather = () => {
 
                         <div className='flex flex-row justify-between p-5 mb-5'>
                             <Link to='/'>
-                                <img src="./arrow_left.svg" alt="" />
+                                <img src="./arrow_left.svg" className='xs:hidden md:block' alt="" />
                             </Link>
-                            <h3 className='text-3xl text-center text-[#E5DBCC]'>Real-Time Weather Updates</h3>
+                            <h3 className='text-3xl md:text-center text-[#E5DBCC] xs:min-w-[200px]'>Real-Time Weather Updates</h3>
                             <Link to='/'>
-                                <h3 className='text-[#E5DBCC] text-xl font-light'>Mars Marvel</h3>
+                                <h3 className='xs:hidden md:block text-[#E5DBCC] text-xl font-light'>Mars Marvel</h3>
                             </Link>
 
                         </div>
-                        <img src="./divider.svg" className='pb-12 mb-7 opacity-50' alt="" />
+                        <img src="./divider.svg" className='xs:hidden md:block pb-12 mb-7 opacity-50' alt="" />
 
                         {/* 
             <h2 className='text-3xl text-center pt-20'>
@@ -108,9 +108,13 @@ const RealTimeWeather = () => {
 
             </div> */}
 
+                        <div className='xs:block md:hidden py-2'>
+                            <p className='text-[#E5DBCC] text-2xl min-w-[300px]'>Please, keep scrolling right for sequential info!</p>
+                        </div>
 
-                        <div className='-translate-x-24'>
-                            <iframe src='https://mars.nasa.gov/layout/embed/image/mslweather/' className='-translate-x-14' width='1380' height='673' scrolling='no' frameborder='0'></iframe>
+
+                        <div className='xs:-translate-x-0 md:-translate-x-24'>
+                            <iframe src='https://mars.nasa.gov/layout/embed/image/mslweather/' className='xs:-translate-x-0 md:-translate-x-14' width='1380' height='673' scrolling='no' frameborder='0'></iframe>
                         </div>
 
 

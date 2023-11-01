@@ -48,17 +48,17 @@ const ImagesPerCameraMardi = () => {
             <div className='max-w-[1240px] mx-auto px-2'>
                 <div className='flex flex-row justify-between p-5 mb-2'>
                     <Link to='/rover_mission_images/camera'>
-                        <img className='translate-x-5' src="/arrow_left.svg" alt="" />
+                        <img className='xs:hidden md:block translate-x-5' src="/arrow_left.svg" alt="" />
                     </Link>
-                    <h3 className='text-3xl text-center text-[#E5DBCC] translate-x-7'>MARDI</h3>
+                    <h3 className='text-3xl text-center text-[#E5DBCC] md:translate-x-7'>MARDI</h3>
                     <Link to='/'>
-                        <h3 className='text-[#E5DBCC] text-xl font-light -translate-x-12'>Mars Marvel</h3>
+                        <h3 className='xs:hidden md:block text-[#E5DBCC] text-xl font-light -translate-x-12'>Mars Marvel</h3>
                     </Link>
 
                 </div>
-                <img src="/divider.svg" className='opacity-50 translate-x-10' alt="" />
+                <img src="/divider.svg" className='xs:hidden md:block opacity-50 translate-x-10' alt="" />
                 <div className='mt-5 text-3xl flex flex-col items-center pt-7'>
-                    <h1>Mars Camera Photos: Mardi</h1>
+                    <h1 className='mb-5'>Mars Camera Photos: Mardi</h1>
                     {/* <div>
                 <label htmlFor="solInput">Enter Sol (Mars Day):</label>
                 <input
@@ -72,9 +72,9 @@ const ImagesPerCameraMardi = () => {
                     {error ? (
                         <div className="text-red-600">{error}</div>
                     ) : (
-                        <div className='grid grid-cols-3 gap-3'>
+                        <div className='grid sm:grid-cols-12 md:grid-cols-3 gap-3'>
                             {photos.map((photo) => (
-                                <p className='p-10' key={photo.id}>
+                                <p className='xs:p-2 md:p-10' key={photo.id}>
                                     <img src={photo.img_src} alt={`Rover - Sol ${sol}`} />
                                     <p>{photo.camera.full_name}</p>
                                 </p>
