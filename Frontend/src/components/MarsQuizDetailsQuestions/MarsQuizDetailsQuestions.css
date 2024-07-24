@@ -1,0 +1,81 @@
+.carded {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+}
+
+.options {
+    margin-top: 30px;
+}
+
+/* .quizItems {
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.quizItems:hover {
+    background-color: lightblue;
+} */
+
+.questionAndIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.questionAndIcon .icon {
+    font-size: 25px;
+    color: white;
+}
+
+.Toastify__toast-body {
+    font-size: 25px;
+    font-weight: bold;
+    height: 70px;
+    padding: 2px;
+}
+
+
+
+
+/* Mobile Devices */
+
+@media only screen and (min-width:320px) and (max-width: 350px) {
+    .shift {
+        transform: translateX(100px);
+    }
+}
+
+
+
+@media only screen and (min-width:350px) and (max-width: 400px) {
+    .shift {
+        transform: translateX(100px);
+    }
+}
+
+
+
+
+@media only screen and (min-width:400px) and (max-width: 688px) {
+    .shift {
+        transform: translateX(100px);
+    }
+}
+
+
+
+
+/* Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {}
+
+
+
+/* Desktop */
+
+@media only screen and (min-width:992px) and (max-width: 1400px) {}
